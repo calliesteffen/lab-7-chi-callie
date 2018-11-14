@@ -38,11 +38,37 @@ get_guns<- gcdf %>%
   select(-gender)
 
 rownames(get_guns)<- c("female", "male")
+```
+I'm the collaborator (Tyler Cobian) I'm doing to perform a Chi^2^
 
+I think the Chi^2^ will answer the question as to if there is association between gender and opionion on gun control. Do men and women think differently about if it should be easier or harder to get a gun?
+
+```{r}
+guns_prop<- prop.table(as.matrix(get_guns), 1)
+guns_prop
+
+#perform Chi-square
+
+guns_x2<- chisq.test(get_guns)
+guns_x2
 
 
 
 ```
+
+Recomended government action differs significantly for males and females ($\chi^2$(`r gun_x2$parameter`)=........, p<0.001)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
