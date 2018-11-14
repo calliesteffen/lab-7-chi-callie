@@ -18,5 +18,17 @@ Hey Cal LeiL Nice sweater
 Hey tyler thank you so muchhhhhhhhh
 
 
+```{r}
+
+#####Loading Packages
+
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(pwr)
+
+```
+
+
 
 
